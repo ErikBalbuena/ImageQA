@@ -75,6 +75,6 @@ footer{
 
 img{
 
-    height: 70vh;
-    width: 80vw;
+    height: auto;
+    width: 100%;
 }
