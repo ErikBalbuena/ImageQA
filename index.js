@@ -1,9 +1,9 @@
 function mostrar(input) {
      let img=document.getElementById("img");
-     if(input.value=="Ocultar")
+     if(input.value==="Ocultar")
      {
          img.style.visibility="hidden";
-         input.value="Mostrar"
+         input.value="Mostrar";
      }
      else{
        img.style.visibility="visible";

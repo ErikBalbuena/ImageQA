@@ -27,7 +27,7 @@ main{
 .panelImagen{
     position: absolute;
     left: 0vw; /* mueve de izq a derecha*/
-    background-color: deepskyblue;
+    background-image:url(src/img/imagenPrueba.jpg) ;
     width: 70vw;
     height: inherit;
 
@@ -75,6 +75,6 @@ footer{
 
 img{
 
-    height: auto;
-    width: 100%;
+    height: 300px;
+    width: 300px;
 }
