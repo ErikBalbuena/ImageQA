@@ -1,3 +1,4 @@
+
 /*Esta es la plantilla de buenas pràcticas*/
 *{
     box-sizing: border-box;
@@ -26,10 +27,15 @@ main{
 
 .panelImagen{
     position: absolute;
+    display:flex;
+    justify-content: right;
     left: 0vw; /* mueve de izq a derecha*/
-    background-image:url(src/img/imagenPrueba.jpg) ;
-    width: 70vw;
-    height: inherit;
+    background-image:url(src/img/maniqui2.jpg) ;
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-left:55px;
+    margin-top:20px;
 
 }
 
@@ -37,7 +43,7 @@ main{
     position: absolute;
     right: 0vw;
     background-color: darkgray;
-    width: 30vw;
+    width: 50vw;
     height: inherit;
 }
 
@@ -73,8 +79,15 @@ footer{
     height: 10vh;
 }
 
-img{
 
+.inputPreview {
+    margin: left 0px; ;
+} 
+
+
+
+img {
+    margin-right: 199px;
     height: 300px;
     width: 300px;
 }

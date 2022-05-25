@@ -17,7 +17,7 @@
 
     <main>
         <section class="panelImagen">
-            <p>Aqui podemos pasar el mouse por la imagen e intercalarla por el maniqui de prueba</p>
+            <p></p>
             
             <p><img src="src/img/imagenPrueba.jpg" 
                 onmouseout ="this.src='src/img/maniqui2.jpg'"
@@ -32,8 +32,12 @@
                 Aquí podemos intercalar Mostrar/Ocultar imagenes
                 <input type="button"  onclick="mostrar(this)" value="Ocultar">
             </div>
-            <div  class="contenedor_lateral_02">seccion 2</div>
-            <div  class="contenedor_lateral_03">seccion 3</div>
+            <div  class="contenedor_lateral_02">
+                Aquí podemos cambiar la imagen predeterminada
+                <br>
+                <input type="file" onchange="previewFile()"><br>
+            </div>
+            <div  class="contenedor_lateral_03">Análisis de ruido</div>
         </section>
     </main>
 
