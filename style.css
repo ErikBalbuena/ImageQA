@@ -48,7 +48,7 @@ main{
     left: 10%;
     height: 15%;
     background-color: lightseagreen;
-    top: 2%;
+    top: 3%;
     font-size: 10px;
 }
 #onchange{
@@ -64,7 +64,8 @@ main{
     left: 10%;
     height: 60%;
     background-color: lightseagreen;
-    top: 19%;
+    top: 20%;
+    font-size: 12px;
 }
 
 .x{
@@ -90,9 +91,9 @@ main{
     position: absolute;
     width: 80%;
     left: 10%;
-    height: 5%;
+    height: 15%;
     background-color: lightseagreen;
-    top: 95%;
+    top: 82%;
 }
 
 footer{
