@@ -1,5 +1,5 @@
 var img = new Image();
-img.src = "./maniqui2.jpg";
+img.src = "./imagenPrueba.jpg";
 const alto = img.height;
 const ancho = img.width;
 console.log("altura", alto);
@@ -10,10 +10,10 @@ console.log("ancho", ancho);
 
 function draw(){
 var canvas = document.getElementById("imagen");
-canvas.width = ancho;
-canvas.height = alto;
+canvas.width = 400;
+canvas.height =400 ;
 var ctx = canvas.getContext("2d");
-ctx.drawImage(img,75,75,150,150);
+ctx.drawImage(img,75,75,225,225);
 var imageData = ctx.getImageData(75,75,225,225);
 var pixels = imageData.data;
 

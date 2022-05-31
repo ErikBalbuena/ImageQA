@@ -1,19 +1,14 @@
 
-/*Esta es la plantilla de buenas pràcticas*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* 1rem = 10px */
+
 html{
     font-size: 62.5%;
 }
 
-/*buenas pràcticas: hacer multi dispositivo
-modificar font-size de html al aplicar
-media queries (breakpoints), solo utilizar 
-una web font, declarar variables en root:{}. */
 
 header{
     background-color: blue;
@@ -51,33 +46,60 @@ main{
     position: absolute;
     width: 80%;
     left: 10%;
-    height: 20%;
+    height: 15%;
     background-color: lightseagreen;
-    top: 10%;
+    top: 2%;
+    font-size: 10px;
+}
+#onchange{
+    font-size: smaller;
+}
+#showhide{
+    font-size: smaller;
 }
 
 .contenedor_lateral_02{
     position: absolute;
     width: 80%;
     left: 10%;
-    height: 20%;
+    height: 60%;
     background-color: lightseagreen;
-    top: 40%;
+    top: 19%;
 }
+
+.x{
+    display: inline;
+    margin: 0 5px;
+}
+.y{
+    display: inline;
+    margin: 0 5px;
+}
+#xi,#xf,#yi,#yf{
+    font-size: smaller;
+
+}
+#aceptar{
+    font-size: smaller;
+    margin: 0 5px;
+}
+
+
 
 .contenedor_lateral_03{
     position: absolute;
     width: 80%;
     left: 10%;
-    height: 20%;
+    height: 5%;
     background-color: lightseagreen;
-    top: 70%;
+    top: 95%;
 }
 
 footer{
     background-color: blueviolet;
     height: 10vh;
 }
+
 
 
 .inputPreview {

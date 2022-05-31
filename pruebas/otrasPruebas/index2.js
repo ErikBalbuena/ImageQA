@@ -1,37 +1,25 @@
-
-
-function mostrar(input) {
-  let img2=document.getElementById("img");
-  if(input.value==="Ocultar")
-  {
-      img2.style.visibility="hidden";
-      input.value="Mostrar";
-  }
-  else{
-    img2.style.visibility="visible";
-    input.value="Ocultar"
-  }    
-}
-
-
 var img = new Image();
+img.src = "src/img/imagenPrueba.jpg";
+console.log(img);
+
 function previewFile() {
-const preview = document.querySelector('img');
-const file = document.querySelector('input[type=file]').files[0];
-const reader = new FileReader();
+  const preview = document.querySelector('img');
+  const file = document.querySelector('input[type=file]').files[0];
+  const reader = new FileReader();
 
-reader.addEventListener("load", function () {
- // convierte la imagen a una cadena en base64
- preview.src = reader.result;
-}, false);
-if (file) {
- reader.readAsDataURL(file);
+  reader.addEventListener("load", function () {
+    // convierte la imagen a una cadena en base64
+    preview.src = reader.result;
+    img.src=preview.src;
+  }, false);
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+
 }
-}
 
 
 
-// se agregó el codigo de abajo
 function datos(x0,y0,xf,yf){
   let alto=img.height;
   let ancho=img.width;
@@ -86,5 +74,4 @@ function subir(){
     console.log(matriz);
   }
   crearMatriz(xi,xf,yi,yf, datos());
-}   
-
+}

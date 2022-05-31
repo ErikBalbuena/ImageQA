@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de ruido</title>
+    <link rel="stylesheet" href="./solucion.css">
+
+</head>
+<body>
+    <header>
+        <p>
+            PRUEBA DE RUIDO
+        </p>
+    </header>
+
+    <main>
+        <section class="panelImagen">
+            <p>Aqui podemos pasar el mouse por la imagen e intercalarla por el maniqui de prueba</p>
+            
+            <p><img src="/pruebas/imagenPrueba.jpg" 
+                id="img"></p>   
+        </section>
+
+
+        <section class="panelLateral">
+            <!-- En esta sección se debe de mostrar las opciones de carga de 
+                la imagen así como los resultados de la prueba, se propone se genere
+                empleando JavaScript -->
+            <div  class="contenedor_lateral_01">
+                Aquí podemos intercalar Mostrar/Ocultar imagenes <br>
+                <input type="button"  onclick="mostrar(this)" value="Ocultar">
+            </div>
+            <div  class="contenedor_lateral_02">
+                Aquí podemos cambiar la imagen predeterminada
+                <br>
+                <input type="file" onchange="previewFile()"><br>
+            </div>
+            <div  class="contenedor_lateral_03">¿Es la imagen que quiere subir? <br>
+                <input type="number" id="xi"><input type="number" id="xf"> <br>
+                <input type="number" id="yi"><input type="number" id="yf"> <br>
+                    <input type="button" onclick="subir()" value="Aceptar">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            PRUEBAS DE CALIDAD DE IMAGEN 
+        </p>
+    </footer>
+
+    <script src="pruebas/otrasPruebas/index2.js"></script>
+</body>
+</html>

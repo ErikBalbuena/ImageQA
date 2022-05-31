@@ -19,23 +19,36 @@
         <section class="panelImagen">
             <p></p>
             
-            <p><img src="src/img/imagenPrueba.jpg" 
-                onmouseout ="this.src='src/img/maniqui2.jpg'"
-                onmouseover="this.src='src/img/imagenPrueba.jpg'" 
-                id="img"></p>   
+            <p><img src="src/img/imagenPrueba.jpg"
+                id="img"></p>
+                
+                <!-- <script> onmouseout ="this.src='src/img/maniqui2.jpg'"
+                    onmouseover="this.src='src/img/imagenPrueba.jpg'"</script>    este codigo va en medio del imag y el id  -->
+               
         </section>
         <section class="panelLateral">
             <!-- En esta sección se debe de mostrar las opciones de carga de 
                 la imagen así como los resultados de la prueba, se propone se genere
                 empleando JavaScript -->
             <div  class="contenedor_lateral_01">
-                Aquí podemos intercalar Mostrar/Ocultar imagenes
-                <input type="button"  onclick="mostrar(this)" value="Ocultar">
-            </div>
-            <div  class="contenedor_lateral_02">
                 Aquí podemos cambiar la imagen predeterminada
                 <br>
-                <input type="file" onchange="previewFile()"><br>
+                <input type="file" onchange="previewFile()" id="onchange"><br>
+                Aquí podemos intercalar Mostrar/Ocultar imagenes
+                <input type="button"  onclick="mostrar(this)" value="Ocultar" id="showhide">
+            </div>
+            <div  class="contenedor_lateral_02">
+                <canvas id="imagen" style="border:1px solid #000000;">
+                    <p>
+                        <img src="./imagenPrueba.jpg" id="img">
+                    </p>
+                </canvas>
+                contenedor de corte de imagen
+                "aqui iria el corte de la imagen que vamos a analizar"
+                <input type="number" class="x" id="xi" placeholder="introducir Xi"><input type="number" class="x" id="xf" placeholder="introducir Xf"> <br>
+                <input type="number" class="y" id="yi" placeholder="introducir Yi"><input type="number" class="y" id="yf" placeholder="introducir Yf"> <br>
+                    <input type="button" onclick="subir()" value="Aceptar" id="aceptar">
+           
             </div>
             <div  class="contenedor_lateral_03">Análisis de ruido</div>
         </section>
