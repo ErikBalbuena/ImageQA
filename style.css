@@ -1,0 +1,93 @@
+/*Esta es la plantilla de buenas pràcticas*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 1rem = 10px */
+html{
+    font-size: 62.5%;
+}
+
+/*buenas pràcticas: hacer multi dispositivo
+modificar font-size de html al aplicar
+media queries (breakpoints), solo utilizar 
+una web font, declarar variables en root:{}. */
+
+header{
+    background-color: blue;
+    height: 10vh;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+main{
+    background-color: cyan;
+    height: 80vh;
+}
+
+.panelImagen{
+    position: absolute;
+    left: 0vw; /* mueve de izq a derecha*/
+    width: 70vw;
+    height: inherit;
+
+}
+
+.panelLateral{
+    position: absolute;
+    right: 0vw;
+    background-color: darkgray;
+    width: 30vw;
+    height: inherit;
+    font-size: 1.5rem;
+    
+}
+
+.contenedor_lateral_01{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 15%;
+    background-color: lightseagreen;
+    top: 3%;
+    font-size: 10px;
+    padding: 2%;
+}
+
+.contenedor_lateral_02{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 60%;
+    background-color: lightseagreen;
+    top: 20%;
+    font-size: 12px;
+    padding: 2%;
+}
+.contenedor_lateral_03{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    height: 15%;
+    background-color: lightseagreen;
+    top: 82%;
+    padding: 2%;
+}
+
+footer{
+    background-color: blueviolet;
+    height: 10vh;
+}
+
+img{
+
+    height: 100%;
+    width: 100%;
+}
+input{
+    display: inline;
+    margin: 0 5px;
+    width: 45%;
+    border-radius: 10%;
+}
