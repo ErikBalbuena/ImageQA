@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prueba de ruido</title>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <img id="img1"><br/>
-    <input id="inputFile1" type="file">
+    <header>
+        <p>
+            PRUEBA DE RUIDO
+        </p>
+    </header>
+
+    <main>
+        <section class="panelImagen">
+<<<<<<< HEAD:ruido01.html
+            <p>Aquí se debe de mostrar la IMAGEN erere</p>
+            
+            
+            
+
+=======
+            <p>Aqui podemos pasar el mouse por la imagen e intercalarla por el maniqui de prueba</p>
+            
+            <p><img src="src/img/imagenPrueba.jpg" 
+                id="img"></p>   
+>>>>>>> 8f985f2c578fc2ee1a74d35563f0b7f81c4c40d8:ruido.html
+        </section>
+
+
+        <section class="panelLateral">
+            <!-- En esta sección se debe de mostrar las opciones de carga de 
+                la imagen así como los resultados de la prueba, se propone se genere
+                empleando JavaScript -->
+            <div  class="contenedor_lateral_01">
+                Aquí podemos intercalar Mostrar/Ocultar imagenes <br>
+                <input type="button"  onclick="mostrar(this)" value="Ocultar">
+            </div>
+            <div  class="contenedor_lateral_02">
+               
+                <canvas id="imagen" style="border:1px solid #000000;">
+                </canvas><br>
+                ¿Es la imagen que quiere subir? <br>
+                <input type="number" id="xi"><input type="number" id="xf"> <br>
+                <input type="number" id="yi"><input type="number" id="yf"> <br><br>
+                    <input type="button" onclick="subir()" value="Aceptar">
+            </div>
+            <div  class="contenedor_lateral_03">
+                Aquí podemos cambiar la imagen predeterminada
+                <br>
+                <input type="file" onchange="previewFile()"><br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            PRUEBAS DE CALIDAD DE IMAGEN 
+        </p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
