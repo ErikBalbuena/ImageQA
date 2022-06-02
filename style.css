@@ -31,7 +31,12 @@ main{
     background-repeat: no-repeat;
     margin-left:55px;
     margin-top:20px;
-
+}
+#nota{
+    display:block;
+    font-size: 12px;
+    margin-left: 5px;
+    
 }
 
 .panelLateral{

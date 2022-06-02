@@ -1,5 +1,3 @@
-
-
 function mostrar(input) {
   let img2=document.getElementById("img");
   if(input.value==="Ocultar")
@@ -87,4 +85,3 @@ function subir(){
   }
   crearMatriz(xi,xf,yi,yf, datos());
 }   
-
