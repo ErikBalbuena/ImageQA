@@ -1,20 +1,23 @@
 
+var img = new Image();
 
+
+let alto;
+let ancho;
 function mostrar(input) {
-  let img2=document.getElementById("img");
+  let img=document.getElementById("img");
   if(input.value==="Ocultar")
   {
-      img2.style.visibility="hidden";
+      img.style.visibility="hidden";
       input.value="Mostrar";
   }
   else{
-    img2.style.visibility="visible";
+    img.style.visibility="visible";
     input.value="Ocultar"
   }    
 }
+console.log("imagen panel principal  ancho: ",img.width, "alto: ",img.height);
 
-
-var img = new Image();
 function previewFile() {
 const preview = document.querySelector('img');
 const file = document.querySelector('input[type=file]').files[0];
@@ -29,19 +32,18 @@ if (file) {
 }
 }
 
-
-
 // se agregó el codigo de abajo
-function datos(x0,y0,xf,yf){
-  let alto=img.height;
-  let ancho=img.width;
-  console.log("height: "+alto, "width: "+ancho);
+
+let pixels;
+function datos(){
+  alto=img.height;
+  ancho=img.width;
+  console.log("alto.imagen=",alto,"ancho.imagen=",ancho)
   const canvas = document.getElementById("imagen");
-  console.log("height: "+canvas.height, "width: "+canvas.width);
+  console.log("alto.canvas: ",canvas.height, "ancho.canvas: ",canvas.width);
   var ctx = canvas.getContext("2d");
   var imageData = ctx.getImageData(0,0,ancho,alto);
-  var pixels = imageData.data;
-
+  pixels = imageData.data;
   console.log(pixels);
   console.log(Object.values(pixels))
   var result=[];
@@ -53,29 +55,30 @@ function datos(x0,y0,xf,yf){
 }
  
 function subir(){
-  var xi = document.getElementById("xi").value; 
-  var xf = document.getElementById("xf").value; 
-  var yi = document.getElementById("yi").value; 
-  var yf = document.getElementById("yf").value; 
+  let xi = document.getElementById("xi").value; 
+  let xf = document.getElementById("xf").value; 
+  let yi = document.getElementById("yi").value; 
+  let yf = document.getElementById("yf").value; 
   function draw(x0,y0,xf,yf){
     const canvas = document.getElementById("imagen");
-    console.log("height: "+canvas.height, "width: "+canvas.width);
+    console.log("alto.canvasdraw: ",canvas.height, "ancho.canvasdraw: ",canvas.width);
     var ctx = canvas.getContext("2d");
     ctx.drawImage(img, x0, y0, xf-x0,yf-y0, 0, 0, canvas.width, canvas.height);
   }
-  draw(xi,xf,yi,yf);
+
+  draw(xi,yi,xf,yf);
+
   function crearMatriz(x0,y0,xf,yf,result){
     let matriz=[];
     var h=0;
-    let alto=img.height;
-    let ancho=img.width;
-    for (let k=y0; k < alto; k++) {
+    let alto2=img.height;
+    let ancho2=img.width;
+    for (let k=y0; k < alto2; k++) {
       let fila=[]
-      for (let j=x0; j < ancho; j++) {
+      for (let j=x0; j < ancho2; j++) {
         if (j<xf){
           fila[j-x0]=result[h];
         }
-        
         h++;
       }
       if(k<yf){
@@ -85,6 +88,7 @@ function subir(){
     };
     console.log(matriz);
   }
+
   crearMatriz(xi,xf,yi,yf, datos());
 }   
 
