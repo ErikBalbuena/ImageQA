@@ -45,7 +45,7 @@ function subir(){
   var xf = document.getElementById("xf").value; 
   var yi = document.getElementById("yi").value; 
   var yf = document.getElementById("yf").value; 
-  function draw(x0,y0,xf,yf){
+  function draw(x0,xf,y0,yf){
     const canvas = document.getElementById("imagen");
     console.log("height: "+canvas.height, "width: "+canvas.width);
     var ctx = canvas.getContext("2d");
@@ -53,6 +53,7 @@ function subir(){
   }
   draw(xi,xf,yi,yf);
   function crearMatriz(x0,y0,xf,yf,result){
+    console.log("result"+result)
     let matriz=[];
     var h=0;
     let alto=img.height;
@@ -75,4 +76,3 @@ function subir(){
   }
   crearMatriz(xi,xf,yi,yf, datos());
 }
-
