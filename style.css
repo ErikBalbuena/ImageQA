@@ -79,14 +79,15 @@ main{
     font-size: 12px;
 }
 
-.x{
+/* .x{
     display: inline;
     margin: 0 5px;
 }
 .y{
     display: inline;
     margin: 0 5px;
-}
+} */
+
 #xi,#xf,#yi,#yf{
     font-size: smaller;
 

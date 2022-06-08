@@ -1,22 +1,24 @@
 
-var img = new Image();
 
-
-let alto;
-let ancho;
+// let alto;
+// let ancho;
 function mostrar(input) {
-  let img=document.getElementById("img");
+  let img2=document.getElementById("img");
   if(input.value==="Ocultar")
   {
-      img.style.visibility="hidden";
+      img2.style.visibility="hidden";
       input.value="Mostrar";
   }
   else{
-    img.style.visibility="visible";
+    img2.style.visibility="visible";
     input.value="Ocultar"
-  }    
+  } 
+  console.log("imagen panel principal  ancho: ",img2.width, "alto: ",img2.height);   
 }
-console.log("imagen panel principal  ancho: ",img.width, "alto: ",img.height);
+
+let img=new Image();
+img.src="src/img/imagenPrueba.jpg"
+
 
 function previewFile() {
 const preview = document.querySelector('img');
@@ -36,8 +38,8 @@ if (file) {
 
 let pixels;
 function datos(){
-  alto=img.height;
-  ancho=img.width;
+  let alto=img.height;
+  let ancho=img.width;
   console.log("alto.imagen=",alto,"ancho.imagen=",ancho)
   const canvas = document.getElementById("imagen");
   console.log("alto.canvas: ",canvas.height, "ancho.canvas: ",canvas.width);
